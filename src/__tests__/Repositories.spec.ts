@@ -162,9 +162,9 @@ describe('Repositories', () => {
   });
 
   it('[GamesRepository] should be able find a game by entire or partial given title', async () => {
-    const result1 = await gamesRepository.findByTitleContaining('Of U');
+    const result1 = await gamesRepository.findByTitleContaining('of u');
     const result2 = await gamesRepository.findByTitleContaining('eed');
-    const result3 = await gamesRepository.findByTitleContaining('Rocket League');
+    const result3 = await gamesRepository.findByTitleContaining('rocket league');
 
     expect(result1).toEqual([
       expect.objectContaining({
